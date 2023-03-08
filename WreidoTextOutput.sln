@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WreidoTextOutput", "WreidoTextOutput\WreidoTextOutput.csproj", "{C5702005-9E21-4C0F-906E-2BE39884767D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C5702005-9E21-4C0F-906E-2BE39884767D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5702005-9E21-4C0F-906E-2BE39884767D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5702005-9E21-4C0F-906E-2BE39884767D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5702005-9E21-4C0F-906E-2BE39884767D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3854AC31-9043-4ED6-94B8-C5D68F89D3F7}
+	EndGlobalSection
+EndGlobal
