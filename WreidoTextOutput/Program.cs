@@ -14,7 +14,7 @@ class program
 
         if (MainInput == 1)
         {
-            Crypt crypt = new();
+            Crypting crypt = new();
             crypt.CryptInput = Convert.ToString(Console.ReadLine);
             /*Make you text converter here*/ 
         }
