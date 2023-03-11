@@ -1,24 +1,34 @@
 ﻿using WreidoTextOutput;
 
-class program
+class Program
 {
-    public void Main(string[] args)
+    public static void Main(string[] args)
     {
-        PatternMenu MainMenu = new();
-        MainMenu.PatternHeadLineMethod("Main Menu");
-        MainMenu.PatternTextMethod("Wanna make wreido text?",1);
-        MainMenu.PatternTextMethod("Wanna see what i replace?",2);
-        MainMenu.PatternTextMethod("Wanna quit", 3);
-        int MainInput = 0;
-            MainInput = Convert.ToInt32(Console.ReadLine());
-
-        if (MainInput == 1)
+        bool Check = true;
+        do
         {
-            Crypting crypt = new();
-            crypt.CryptInput = Convert.ToString(Console.ReadLine);
-            /*Make you text converter here*/ 
-        }
-        else if (MainInput == 2) { /*Show what youre using*/}
-        else if (MainInput == 3) { /*And quiting is here*/}
+            PatternMenu MainMenu = new();
+            MainMenu.PatternHeadLineMethod("Main Menu");
+            MainMenu.PatternTextMethod("Wanna make wreido text?", 1);
+            MainMenu.PatternTextMethod("Wanna quit", 2);
+            int MainInput = 0;
+                MainInput = Convert.ToInt32(Console.ReadLine());
+            Console.Clear();
+
+            if (MainInput == 1)
+            {
+                Console.WriteLine("Write you sentence");
+                Crypt _crypt = new();
+                _crypt.Crypting(Console.ReadLine());
+                Console.Clear();
+                Console.WriteLine("xX_" + _crypt.PersonalUnlock + "_Xx");
+                Thread.Sleep(5000);
+            }
+            else if (MainInput == 2) { Check = false; }
+            else
+            {
+                Console.WriteLine("Error: Number is not valied");
+            }
+        } while (Check == true);
     }
 }
